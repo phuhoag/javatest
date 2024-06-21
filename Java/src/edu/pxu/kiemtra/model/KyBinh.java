@@ -10,7 +10,7 @@ public class KyBinh extends NhanVat implements HanhDong {
     
 
     public KyBinh(String ten, String id, double nangluong, VuKhi vk, boolean giap, boolean ngua) {
-		super(ten, id, nangluong);
+		super(vk, giap, ngua);
 		this.vk = vk;
 		this.giap = giap;
 		this.ngua = ngua;
@@ -24,7 +24,7 @@ public class KyBinh extends NhanVat implements HanhDong {
         this.vk = vk;
     }
 
-    public boolean isGiap() {
+    public boolean getGiap() {
         return giap;
     }
 
@@ -32,7 +32,7 @@ public class KyBinh extends NhanVat implements HanhDong {
         this.giap = giap;
     }
 
-    public boolean isNgua() {
+    public boolean getNgua() {
         return ngua;
     }
 
